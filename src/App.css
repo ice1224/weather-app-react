@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('../node_modules/@fortawesome/fontawesome-free/css/all.css');
 
 :root {
   --text-color-1: #ffffff;
@@ -22,15 +23,16 @@ body {
   margin-bottom: 5vh;
 }
 
-.row{
+.row {
   text-align: center;
   margin: auto;
   padding: auto;
-  box-shadow: 15px 5px 15px rgba(0,0,0,0.75);
+  box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.75);
   background-color: var(--element-background);
 }
 
 .title-container {
+  position: relative;
   background: url("img/bckg.png") 54% no-repeat;
   background-size: cover;
   display: flex;
@@ -56,6 +58,23 @@ body {
   font-family: "Merriweather", serif;
 }
 
+.scroll_down_button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--text-color-1);
+  text-align: center;
+  padding: 0px;
+  font-size: 1.4em;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  background-color: transparent;
+  color: var(--text-color-1);
+  outline: none;
+}
+
 .form-container {
   padding-top: 80px;
   min-height: 90vh;
@@ -63,7 +82,7 @@ body {
   padding-bottom: 5vh;
 }
 
-.form-container form{
+.form-container form {
   text-align: center;
 }
 
@@ -84,7 +103,7 @@ input[type="text"] {
   outline: none;
 }
 
-::placeholder{
+::placeholder {
   color: var(--text-color-1);
   opacity: 0.6;
 }
@@ -97,7 +116,7 @@ input:-webkit-autofill {
 
 button {
   display: block;
-  border: 0;
+  border: 2px solid var(--element-color);
   padding: 8px 20px;
   margin-top: 15px;
   margin-left: auto;
@@ -111,12 +130,18 @@ button {
   background-color: var(--element-color);
   color: var(--text-color-2);
   font-weight: 400;
+  outline: none;
 }
 
 button:active {
   outline: none;
   color: var(--element-color);
-  background-color: var(--text-color-2);
+  background-color: var(--element-background);
+  border: 2px solid var(--element-color);
+}
+
+button:focus {
+  outline: none;
 }
 
 .weather__info {
@@ -131,7 +156,7 @@ button:active {
 
 .weather__key {
   color: var(--element-color);
-  border-bottom: solid 2px rgba(255,255,255,0.06);
+  border-bottom: solid 2px rgba(255, 255, 255, 0.06);
   padding: 20px 0 20px 0;
   font-weight: 400;
 }

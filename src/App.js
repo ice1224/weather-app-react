@@ -7,6 +7,16 @@ const API_KEY = "b4195a6ab2f69228045387b160d8ed7e";
 
 class App extends React.Component {
   
+  scrollToForm(){
+    let scrollToPoint = document.getElementsByClassName("form-container")[0].offsetTop;
+      window.scrollTo(
+          {
+              top: scrollToPoint,
+              behavior: "smooth"
+          }
+      )
+  }
+
   state = {
     city: undefined,
     country: undefined,
@@ -54,9 +64,9 @@ class App extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-md-5 title-container">
-              <Titles/>
+              <Titles scrollToForm={this.scrollToForm}/>
             </div>
-            <div className="col-md-7 form-container">
+            <div id="test" className="col-md-7 form-container">
               <Form getWeather={this.getWeather}/>
               <Weather 
                 city={this.state.city} 
