@@ -55,8 +55,21 @@ class App extends React.Component {
         error: "Please enter the correct location"
       })
     }
+    
+    let element = document.getElementsByClassName("weather__info")[0];
+    let parent = element.parentNode;
+    let scrollToPoint = parent.offsetTop + element.offsetTop;
+    window.scrollTo(
+      {
+          top: scrollToPoint,
+          behavior: "smooth"
+      }
+    )
+
 
   }
+
+
 
   render(){
     return (
@@ -66,7 +79,7 @@ class App extends React.Component {
             <div className="col-md-5 title-container">
               <Titles scrollToForm={this.scrollToForm}/>
             </div>
-            <div id="test" className="col-md-7 form-container">
+            <div className="col-md-7 form-container">
               <Form getWeather={this.getWeather}/>
               <Weather 
                 city={this.state.city} 
