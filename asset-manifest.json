@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "//ice1224.github.io/weather-app-react/static/css/main.8117f4f4.chunk.css",
+    "main.js": "//ice1224.github.io/weather-app-react/static/js/main.34a5afb6.chunk.js",
+    "main.js.map": "//ice1224.github.io/weather-app-react/static/js/main.34a5afb6.chunk.js.map",
+    "runtime-main.js": "//ice1224.github.io/weather-app-react/static/js/runtime-main.4b661e96.js",
+    "runtime-main.js.map": "//ice1224.github.io/weather-app-react/static/js/runtime-main.4b661e96.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "//ice1224.github.io/weather-app-react/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.739b9b42.chunk.js": "//ice1224.github.io/weather-app-react/static/js/2.739b9b42.chunk.js",
+    "static/js/2.739b9b42.chunk.js.map": "//ice1224.github.io/weather-app-react/static/js/2.739b9b42.chunk.js.map",
+    "index.html": "//ice1224.github.io/weather-app-react/index.html",
+    "precache-manifest.524f76c82a922547bfebece325097f02.js": "//ice1224.github.io/weather-app-react/precache-manifest.524f76c82a922547bfebece325097f02.js",
+    "service-worker.js": "//ice1224.github.io/weather-app-react/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "//ice1224.github.io/weather-app-react/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.8117f4f4.chunk.css.map": "//ice1224.github.io/weather-app-react/static/css/main.8117f4f4.chunk.css.map",
+    "static/media/App.css": "//ice1224.github.io/weather-app-react/static/media/bckg.82b686d7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4b661e96.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.739b9b42.chunk.js",
+    "static/css/main.8117f4f4.chunk.css",
+    "static/js/main.34a5afb6.chunk.js"
+  ]
+}
